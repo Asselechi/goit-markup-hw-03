@@ -1,0 +1,390 @@
+:root {
+  --accent-color: #2196f3;
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* =================== HEADER ================== */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  margin-left: auto;
+}
+
+.title-theme-light {
+  color: #212121;
+}
+
+.title-theme-dark {
+  color: #ffffff;
+}
+
+.current-menu {
+  color: var(--accent-color);
+}
+
+.studio {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+
+  /* color: #212121; */
+}
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+  margin-right: 93px;
+}
+.menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+  margin-left: auto;
+  margin-right: 50px;
+}
+.mail:hover,
+.mail:focus {
+  color: var(--accent-color);
+}
+.tel-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+.tel-number:hover,
+.tel-number:focus {
+  color: var(--accent-color);
+}
+/* =================== HERO ================== */
+.hero {
+  background: #2f303a;
+}
+
+.hero-padding {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 0 auto 30px;
+  max-width: 696px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 188% */
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding: 10px, 32px;
+  cursor: pointer;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.btn:hover,
+.btn:focus {
+  background: #188ce8;
+}
+
+/* =================== TEXT BELOW YHE HERO ================== */
+.section-do {
+  padding-top: 94px;
+}
+
+.list-text {
+  display: flex;
+}
+.list-part-title:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.list-part-title {
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.part-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #212121;
+}
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+/* =================== WHAT WE DO ================== */
+
+.sub-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: #212121;
+}
+
+.list-what-we-do {
+  display: flex;
+}
+
+.card-what-we-do:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.card-what-we-do {
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+/* ============= OUR TEAM ============================= */
+.section-team {
+  background: #f5f4fa;
+  padding-top: 94px;
+}
+
+.list-team {
+  display: flex;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  margin-bottom: 10px;
+}
+.position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.team-card:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+.team-card {
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.team-wrapper {
+  padding-top: 30px;
+  /* border: 1px solid #ffffff; */
+}
+
+/* ============= FOOTER ============================= */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.info-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* ================ PORTFOLIO =======================*/
+
+.list-buttom {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-wrapper {
+  padding-top: 20px;
+}
+
+.filter-buttom {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.filter-buttom:hover,
+.filter-buttom:focus {
+  color: #ffffff;
+  background: #2196f3;
+}
+.post-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  color: #212121;
+}
+.filter-name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.table-portfolio:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.table-portfolio {
+  flex-basis: calc((100% - 90px) / 3);
+}
